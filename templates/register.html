@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do register</title>
+</head>
+<body>
+
+    <form action="/register/" method="post">
+        {% csrf_token %}
+        <p>
+            <label>username:</label><input type="text" name="uname" />
+        </p>
+        <p>
+            <label>password:</label><input type="password" name="pwd" />
+        </p>
+        <input type="submit" value="zhuce" />
+    </form>
+
+</body>
+</html>
